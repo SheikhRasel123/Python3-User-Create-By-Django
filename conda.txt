@@ -1,0 +1,49 @@
+download conda and install
+conda
+conda create -n myDjangoEnv python=3.8.1
+activate myDjangoEnv 
+pip install pymongo
+conda list
+conda env remove -n test
+================
+
+django-admin --version
+django-admin startproject first_project
+cd first_project
+python manage.py startapp Name
+python manage.py runserver
+===========
+python manage.py migrate
+python manage.py makemigrations
+python manage.py createsuperuser
+admin
+=====
+python module not found?
+python -m pip install django
+deactivate another env
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+Part-2(For Models)
+python manage.py migrate
+python manage.py makemigrations first_app
+python manage.py migrate
+python manage.py shell
+>> from first_app.models import Topic
+>> print(Topic.objects.all())
+>> t = Topic(top_name="Social Network")
+>> t.save()
+====
+User Craete>>>
+python manage.py createsuperuser
+=====
+FAKER
+pip install Faker
+python populate_first_app.py
+
+
+
+==========
+urls.py, urls.py, settings.py,
+views.py, models.py, admin.py, 
+index.py, populate_users.py
